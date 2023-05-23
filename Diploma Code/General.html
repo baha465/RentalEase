@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apartment Rental Agreement</title>
+</head>
+<body>
+
+	<header>
+        <div class="header_inner">
+		<div class="logo">
+			<img src="Images/Logo New.png" alt="Logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="Account.html">Главная страница</a></li>
+				<li><a href="Template.pdf" download>Скачать договор аренды</a></li>
+			</ul>
+		</nav>
+		<div class="language-selector">
+            <label for="language-select"></label>
+            <select id="language-select">
+              <option value="ru">Rus</option>
+              <option value="kk">Kaz</option>
+              <option value="en">Eng</option>
+            </select>
+        </div>
+        </header>
+	</header>
+
+    
+	<main>
+
+
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+    
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 100px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+    
+    .logo img {
+        height: 60px;
+    }
+    
+    nav ul {
+        margin-right: 200px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-right: 60px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #333;
+    }
+
+.hero {
+	background-image: url(Images/фото.png);
+	background-size: cover;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-text h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.hero-buttons {
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button1 {
+	background-color: #fde88d;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 0 20px;
+    margin-right: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.button1:hover {
+	transform: translateY(-10px);
+}
+
+.button2 {
+	background-color: #fde88d;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.button2:hover {
+	transform: translateY(-10px);
+}
+
+.button img {
+	width: 70px;
+	height: 70px;
+}
+
+.button p {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+	color: #333;
+}
+
+.language-selector select {
+    font-size: 17px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .Text1 {
+    margin-left: 483px;
+    font-size: 22px;
+  }
+
+        </style>
+
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Сервис подписи и проверки электронных <br>
+                договоров аренды квартир</h1>
+		</div>
+    </section>
+
+		<div class="hero-buttons">
+			<div class="button1">
+				<a href="Sign.html"><svg xmlns="http://www.w3.org/2000/svg" width="50" fill="orange" class="bi bi-pen" viewBox="0 0 16 16">
+                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                  </svg></a>
+                </div>
+			<div class="button2">
+				<a href="Check.html"><svg xmlns="http://www.w3.org/2000/svg" width="65" fill="orange" class="bi bi-check2" viewBox="0 0 16 16">
+                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg></a>
+            </div>
+		</div>
+        <div class="Text1">
+            <p>Подписать договор &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Проверить документ</p>
+        </div>
+        
+</main>
+
+</body>
+</html>
+

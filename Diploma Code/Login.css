@@ -1,0 +1,181 @@
+.back {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  margin-left: 150px;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  color:#db8f00;
+}
+
+.container {
+  display: flex;
+}
+
+.login-section {
+  flex: 1;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-options {
+  display: flex;
+  margin: 0;
+}
+
+.login-option {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.login-option:hover {
+  background-color: #db8f00;
+}
+
+.login-option.active {
+  background-color: #fde88d;
+}
+
+.login-form {
+  width: 360px;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 96%;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.forgot-password {
+  color: #ffa500;
+  text-decoration: none;
+  display: block;
+  margin: 20px 0;
+}
+
+.login-button {
+  width: 150px;
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-bottom: 13px;
+  background-color: #fde88d;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.disclaimer {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.registration-section {
+  flex: 1;
+  padding-right: 150px;  
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+
+.registration-section h2 {
+  margin-bottom: 20px;
+}
+
+.register-button {
+  width: 250px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color:#fde88d;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 40px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/*Font-sizes*/
+
+.back-link {
+  font-size: 30px;
+}
+
+.login-section h2 {
+  font-size: 40px;
+}
+
+.login-section h3 {
+  font-size: 26px;
+}
+
+.login-option {
+  font-size: 20px;
+}
+
+.input-box ::placeholder {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.disclaimer {
+  font-size: 20px;
+}
+
+.forgot-password {
+  font-size: 22px;
+}
+
+.registration-section h2 {
+  font-size: 40px;
+}
+
+.login-form h4{
+  font-size: 20px;
+}
+
+.login-section h2 {
+  margin: 5px 0;
+}
+
+.login-section h3 {
+  margin: 20px 0;
+}
+
+.login-form h4 {
+  margin: 20px 0;
+}
+
+.registration-section h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}

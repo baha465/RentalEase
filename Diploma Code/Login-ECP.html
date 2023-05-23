@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="ECP.css">
+</head>
+<body>
+  <!-- Main content of the page -->
+  <div class="back">
+    <a href="index.html" class="back-link">&#8592;<b> Назад</b></a>
+  </div>
+  <div class="container">
+    <div class="login-section">
+      <h2>Войти в RentalEase?</h2>
+      <h3>Выберите способ авторизации</h3>
+      <div class="login-options">
+        <a href="Login.html"><button class="login-option active">Логин</button></a>
+        <button class="login-option">ЭЦП</button>
+      </div>
+      <h4>Сертификат</h4>
+    <!-- HTML -->
+
+<input type="file" id="fileInput" style="display:none;">
+  <button class="ECP-button" id="chooseFileButton">Выберите сертификат</button>
+
+  <!-- Block to ask for password -->
+  <div id="passwordBlock" style="display:none;">
+    <h1>Введите пароль от электронной подписи</h1>
+    <input type="password" id="passwordInput" placeholder="Введите пароль" required class="password"><br>
+    <button class="button" id="submitPasswordButton">Подтвердить</button>
+  </div>
+
+<style>
+.password {
+width: 355px;
+height: 50px;
+border-radius: 8px;
+border: 1px solid #000000;
+margin-bottom: 25px;
+font-size: 20px;
+padding-left: 20px;
+}
+
+.button {
+  width: 160px;
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-bottom: 13px;
+  background-color: #fde88d;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+</style>
+
+  <script>
+    // JavaScript
+    document.getElementById('chooseFileButton').addEventListener('click', function() {
+      document.getElementById('fileInput').click();
+    });
+
+    // Show password block after file is selected
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+      var selectedFile = e.target.files[0];
+      // Do something with the selected file, such as uploading it to a server or processing it
+      console.log('Selected file:', selectedFile);
+
+      // Display the password block
+      document.getElementById('passwordBlock').style.display = 'block';
+    });
+
+    // Handle password submission
+    document.getElementById('submitPasswordButton').addEventListener('click', function() {
+      var passwordInput = document.getElementById('passwordInput');
+      var password = passwordInput.value;
+
+      // Perform password validation logic here
+      // If password is correct, navigate to ECP_registration.html
+      if (password === 'Baha2003') {
+        window.location.href = 'Account.html';
+      } else {
+        alert('Неверный пароль. Попробуйте еще раз.');
+        passwordInput.value = '';
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<p class="disclaimer">Согласно Законодательству Республики Казахстан, вы несете персональную ответственность за корректность предоставляемых данных в систему «RentalEase»</p>
+
+</div>
+
+      
+    
+    <div class="registration-section">
+      <h2>Впервые на RentalEase?</h2>
+      <a href="Register.html" class="register-button">Зарегистрироваться</a>
+      <img src="Images/Keys.jpg" alt="Image" class="image">
+    </div>
+</body>
+</html>
+

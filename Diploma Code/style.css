@@ -1,0 +1,816 @@
+/* Header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.header_logo img{
+    width: 170px;
+    height: 40px;
+}
+
+.nav_item{
+    margin-right: 30px;
+    color: #252525;
+    transition: linear 0.2s;
+    text-decoration: none;
+}
+
+.nav_item:hover{
+    color: #cd7a06;
+    text-decoration: none;
+}
+
+
+/* Language selector styles */
+  .language-selector select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Login button styles */
+  .login-button {
+    margin-left: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .login-button:hover {
+    text-decoration: none;
+    color: #cd7a06;
+    background-color: #fde88d;
+  }
+
+
+
+  /* Как это работает? */
+.rounded-rectangle {
+  width: 78%;
+  height:auto;
+  margin: auto;
+  margin-top: 120px;
+  background-color: #fde88d;
+  border-radius: 20px;
+  color: #252525
+}
+
+.image-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rounded-rectangle img {
+  height: 200px;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* Content styles */
+
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 24px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.content p {
+  font-size: 19px;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.content a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.blocks h2 {
+  font-size: 20px;
+}
+
+.block1 {
+  display: flex;
+  align-items: center;  
+  width: 320px;
+  height: 200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #252525;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.block1 img {
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.block1:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.block2 {
+  display: flex;
+  align-items: center;  
+  width: 320px;
+  height: 200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #252525;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.block2 img {
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.block2:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.block3 {
+  display: flex;
+  align-items: center;  
+  width: 320px;
+  height: 200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #252525;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.block3 img {
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.block3:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.videos {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.videos iframe {
+  border-radius: 20px;
+}
+
+/* Кнопка подписать договор */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.my-button {
+  font-size: 19px;
+  display: inline-block;
+  background-color: #fde88d;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.my-button:hover {
+  text-decoration: none;
+  color: #cd7a06;
+}
+
+/* Кнопка обратной связи */
+
+.social2 {
+  place-content: right;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 250px;
+  font-size: 18px;
+  right: auto;
+}
+
+.social2:hover {
+  text-decoration: none;
+  background-color: #fddc7c;
+}
+
+.svg {
+  justify-content: left;
+  padding-top: 5px;
+  padding-left: 35px;
+  margin-right: 20px;
+}
+
+/* Добро пожаловать */
+
+.hello {
+  width: 78%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hello h2 {
+  font-size: 60px;
+}
+
+.hello img{
+  height: 450px;
+  border-radius: 100%;
+}
+
+.texting {
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.texting h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.texting ul {
+  font-size: 25px;
+}
+
+.texting iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+/* Основные задачи */
+
+.tasks {
+  width: 78%;
+  height:auto;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #fde88d;
+  border-radius: 20px;
+  color: #252525
+}
+
+.tasks h2 {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+.tasks_inner {
+  display: flex;
+  margin-top: 30px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.tasks_inner1 {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #252525;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.tasks_inner1:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tasks_inner2 {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #252525;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.tasks_inner2:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tasks_inner3 {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #252525;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.tasks_inner3:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tasks_inner img {
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-container1 h3 {
+  font-size: 18px ;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  }
+
+.text-container2 h3 {
+  font-size: 18px ;
+  margin: 0;
+  margin-bottom: 20px;
+  }
+
+.text-container3 h3 {
+  font-size: 18px ;
+  margin: 0;
+  margin-bottom: 20px;
+  }
+
+
+/*Ключевые возможности*/
+
+.opportunities {
+  margin: 30px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px;
+  text-align: left;
+}
+
+.boxes {
+  width: 78%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.box1 {
+  align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: fit-content;
+  color: #252525;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-left: 40px;
+  transition: all 0.3s ease;
+}
+
+.box1:hover {
+	transform: translateY(-3px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.box2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: fit-content;
+  margin: auto;
+  color: #252525;
+  border: 1px solid #ccc;;
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-left: 40px;
+  transition: all 0.3s ease;
+}
+
+.box2:hover {
+	transform: translateY(-3px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.box3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: fit-content;
+  margin: auto;
+  color: #252525;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  transition: all 0.3s ease;
+}
+
+.box3:hover {
+	transform: translateY(-3px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.boxes hr {
+  height: 2px;
+  background-color: #333;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/*Тарифные планы*/
+
+.container {
+  width: 78%;
+  margin: 0 auto;
+}
+
+.container_inner {
+  margin-top: 30px;
+}
+
+.card-header {
+  background-color: #fde88d;
+}
+
+.card1 {
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.card1:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card2 {
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.card2:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card3 {
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.card3:hover {
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.button1 {
+  background-color: white;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.button1:hover {
+  text-decoration: none;
+  color:#000000;
+  background-color: #fde88d;
+  border: 1px solid #ccc;
+}
+
+.button2 {
+  background-color: white;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.button2:hover {
+  color: #000000;
+  background-color: #fde88d;
+  border: 1px solid #ccc;
+}
+
+.button3 {
+  background-color: white;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.button3:hover {
+  color: #000000;
+  background-color: #fde88d;
+  border: 1px solid #ccc;
+}
+
+
+/*Блок зарегаться*/
+
+.block-wrapper {
+  width: 78%;
+  margin: 0 auto;
+  color: #ffffff;
+  background: url('Images/Звонок\ в\ отеле.jpg') center/cover;
+  height: 300px; /* Set desired height for the block */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.block-content {
+  text-align: center;
+}
+
+.block-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.block-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.btn-register {
+  background-color: #fde88d;
+  color: #000000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.btn-register:hover {
+  text-decoration: none;
+  color: #cd7a06;
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.block-login {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.login-link {
+  color:#fff;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: none;
+  color: #cd7a06;
+}
+
+
+/*FAQ*/
+
+.faq-wrapper {
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.faq_inner {
+  display: flex;
+}
+
+h1 {
+margin: 20px;
+}
+
+.faq-column {
+  flex-basis: 50%;
+  padding: 10px;
+}
+
+.faq-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.faq-box:hover {
+  color: #cd7a06;
+	transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+}
+
+.faq-question::after {
+  content: "+";
+  float: right;
+}
+
+.faq-question.active::after {
+  content: "-";
+}
+
+.faq-question:hover {
+  text-decoration: underline;
+}
+
+
+/*Footer*/
+
+footer {
+  background-color: #fde88d;
+}
+
+.footer-row1 {
+  width: 76%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-row2 {
+  text-align: center;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.footer-contact {
+  margin-right: 115px;
+}
+
+.footer-logo {
+  margin-right: 100px;
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.social-media-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-icons li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.social-media-icons img {
+  width: 40px;
+}
+
+.contact1 {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contact2 {
+  margin-top: 25px;
+  display: flex;
+}
+
+.contact3 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.footer-contact p {
+  font-size: 20px;
+}
+
+.footer-contact h2 {
+  margin-left: 0;
+}
+
+.social1 h2{
+  margin-right: 0;
+}
+
+.back-button {
+  cursor: pointer;
+  background-color: #fde88d;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+

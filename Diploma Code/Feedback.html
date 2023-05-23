@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Transaction Page</title>
+  <!-- Include necessary CSS and JS files for payment processing -->
+  <!-- For example, you can use a payment processing library like Stripe or Braintree -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+  
+    <div class="container">
+    <img src="Images/Logo.jpg" width="450px">
+    <h2>Обратная связь</h2>
+    <p>Пожалуйста, введите личные данные и сообщение, которое хотели бы донести до нас</p>
+    <div class="form-group">
+        <input type="text" class="form-control" id="card-number" name="card-number" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="card-expiration" name="card-expiration" placeholder="Как к вам обращаться" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="card-cvc" name="card-cvc" placeholder="Сообщение" required>
+      </div>
+      <a href="index.html"><button type="submit" class="button">Отправить</button></a>
+    </form>
+    <p><a href="index.html">Назад</a></p>
+  </div>
+
+<style>
+
+  .form-group {
+    justify-content: left;
+    word-wrap: break-word;
+  resize: vertical;
+  }
+
+  .container {
+    border: 1px solid #fddc7c;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 90px;
+    text-align: center;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+  }
+  
+.button {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  width: 130px;
+  background-color: #fde88d;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+input[type="submit"]:hover {
+  background-color: #fddc7c;
+}
+
+
+</style>
+
+
+</body>
+</html>

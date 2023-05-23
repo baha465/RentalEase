@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="Register.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Main content of the page -->
+  <div class="back">
+    <a href="index.html" class="back-link">&#8592;<b> Назад</b></a>
+  </div>
+  <div class="container">
+    <div class="login-section">
+      <h2>Впервые в RentalEase?</h2>
+      <h3>Выберите способ регистрации</h3>
+      <div class="login-options">
+        <button class="login-option active">Логин</button>
+        <a href="Register-ECP.html"><button class="login-option">ЭЦП</button></a>
+      </div>
+      <div class="login-form">
+        <form action="Check.html">
+        <h4>Email</h4>
+        <div class="input-box">
+          <input type="email" placeholder="Введите свой email" required>
+        </div>
+        <h4>Пароль</h4>
+        <div class="input-box">
+          <input type="password" placeholder="Введите свой пароль" required>
+        </div>
+        <h4>Повторный пароль</h4>
+        <div class="input-box">
+          <input type="password" placeholder="Введите свой пароль повторно" required>
+        </div>
+        <button class="register-button">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="registration-section">
+      <h2>У вас уже есть аккаунт?</h2>
+      <a href="Login.html" class="login-button">Войти</a>
+      <img src="Images/Keys.jpg" alt="Image" class="image">
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+  
+      if (email == "" || password == "") {
+        alert("Пожалуйста, заполните оба поля.");
+        return false;
+      }
+      // The form will be submitted if both email and password fields are filled in
+      return true;
+    }
+
+    const password1 = document.querySelector('input[type="password"]');
+const password2 = document.querySelectorAll('input[type="password"]')[1];
+const errorMessage = document.createElement('p');
+errorMessage.className = 'error-message';
+errorMessage.style.color = 'red';
+errorMessage.style.marginTop = '5px';
+errorMessage.style.fontSize = '0.8rem';
+errorMessage.style.fontWeight = 'bold';
+
+function checkPasswords() {
+  if (password1.value !== password2.value) {
+    errorMessage.textContent = "Пароли не совпадают!";
+    password1.parentNode.appendChild(errorMessage);
+    password1.value = "";
+    password2.value = "";
+  } else {
+    errorMessage.textContent = "";
+  }
+}
+
+document.querySelector('.register-button').addEventListener('click', checkPasswords);
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+	<header>
+        <div class="header_inner">
+            <a href="index.html" class="header_logo">
+                <img src="Images/Logo.jpg" alt="header_logo">
+            </a>
+
+			<form role="search">
+				<input type="search" class="form-control" placeholder="Поиск..." aria-label="Поиск">
+            </form>
+            <nav>
+                <a class="nav_item" href="#system">О системе</a>
+                <a class="nav_item" href="#tasks">Задачи</a>
+                <a class="nav_item" href="#opportunity">Преимущества</a>
+                <a class="nav_item" href="#faq">FAQ</a>
+            </nav>
+
+                <div class="language-selector">
+                    <label for="language-select"></label>
+                    <select id="language-select">
+                      <option value="ru">Rus</option>
+                      <option value="kk">Kaz</option>
+                      <option value="en">Eng</option>
+                    </select>
+                </div>
+                    <div class="user-menu">
+                        <p>kalkaman.b14@mail.ru</p>
+        
+                    <div class="user-dropdown">
+                        <a href="Dashboard.html">Signed Agreements</a>
+                        <a href="#">Edit Profile</a>
+                        <a href="index.html">Logout</a>
+                    </div>
+                </div>
+                </div>
+    </header>
+
+	<main>
+          <style>
+            /* Style for the details block */
+            #details-block {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5); /* Updated background color with opacity */
+              z-index: 9999;
+              overflow-y: auto; /* Added scrollbar for vertical overflow */
+            }
+          
+            /* Style for the details content */
+            #details-content {
+              max-width: 65%; /* Updated width to 65% of the page */
+              height: 600px; /* Updated height to 500px */
+              margin: 0 auto; /* Centered horizontally */
+              margin-top: 80px; /* Centered vertically */
+              padding: 20px;
+              background-color: #fff;
+              text-align: center;
+              overflow-y: auto; /* Added scrollbar for vertical overflow */
+              border-radius: 8px;
+            }
+          </style>
+
+          <div class="rounded-rectangle">
+          <div id="system" class="image-content">
+            <img src="Images/New_Idea.png" alt="Image">
+            <div class="content">
+              <h2><b>НЕ ЗНАЕТЕ КАК ПOДПИСАТЬ ДОГОВОР ОНЛАЙН?</b></h2>
+              <p>Согласно п.1 ст.7 Закона РК от 7 января 2003 года № 370-II "Об электронном документе и электронной цифровой подписи" <a href="#" onclick="showDetails()">Подробнее...</a></p>
+              <h3><b>КАК ЭТО РАБОТАЕТ?</b></h3>
+            </div>
+          </div>
+          
+          <div id="details-block">
+            <div id="details-content">
+              <h2 style="text-align: center;">Административный кодекс РК</h2>
+              <hr style="border-top: 2px solid orange; margin-left: 20px; margin-right: 20px;">
+              <h3 style="text-align: left;">Согласно п.1 ст.7 Закона РК от 7 января 2003 года № 370-II &quot;Об электронном документе и электронной цифровой подписи&quot;:</h3>
+              <p style="text-align: justify; padding: 20px;">Электронный документ, соответствующий требованиям законодательства и удостоверенный посредством электронной цифровой подписи лица, имеющего полномочия на его подписание, равнозначен подписанному документу на бумажном носителе и имеет полноценную юридическую силу.</p>
+              <hr style="border-top: 1px solid orange; margin-left: 20px; margin-right: 20px;">
+              <h3 style="text-align: left;">В случае несоблюдения требований законодательства, согласно статье 518 Административного Кодекса РК:</h3>
+              <p style="text-align: justify; padding: 20px;">1. Непринятие принимающим лицом мер по своевременной регистрации иностранцев и лиц без гражданства либо оформлению документов на право их пребывания в Республике Казахстан, либо их выезду из Республики Казахстан по истечении определенного срока пребывания, либо несвоевременное информирование органов внутренних дел о пребывающих у них иммигрантах – влечет предупреждение на физических лиц, штраф на должностных лиц, субъектов малого предпринимательства или некоммерческие организации в размере десяти, на субъектов среднего предпринимательства – в размере пятнадцати, на субъектов крупного предпринимательства – в размере двадцати месячных расчетных показателей.</p>
+              <p style="text-align: justify; padding: 20px;">2. Предоставление жилища иностранцу или лицу без гражданства, пребывающему в Республике Казахстан с нарушени законодательства Республики Казахстан в области миграции населения либо уклонение от выезда из Республики Казахстан в установленные сроки, либо несоответствие фактического места проживания адресу, указанному при регистрации, – влекут штраф на физических лиц в размере двадцати пяти, на должностное лицо, на субъектов малого предпринимательства или некоммерческие организации – в размере сорока, на субъектов среднего предпринимательства – в размере пятидесяти пяти, на субъектов крупного предпринимательства – в размере семидесяти пяти месячных расчетных показателей.</p>
+              <div id="back-button">
+                <a href="#" onclick="hideDetails()"><button class="back-button">Назад</button></a>
+              </div>
+            </div>
+          </div>
+          
+          <script>
+          function showDetails() {
+            document.getElementById('details-block').style.display = 'block';
+          }
+          
+          function hideDetails() {
+            document.getElementById('details-block').style.display = 'none';
+          }
+
+          </script>
+
+            <div class="blocks">
+                <div class="block1">
+                  <img src="Images/b04fafe52c8fe90178e81590adb7f007.jpg" alt="Mal">
+                  <div class="text-container1">
+                    <h3>Редактируйте документы онлайн</h3>
+                <p>Сайт предоставляет настраиваемый шаблон договоров аренды</p>
+                </div>
+            </div>
+
+                <div class="block2">
+                  <img src="Images/b04fafe52c8fe90178e81590adb7f007.jpg" alt="Mal">
+                  <div class="text-container1">
+                    <h3>Подписывайте документы с ЭЦП</h3>
+                <p>Сайт предоставляет настраиваемый шаблон договоров аренды</p>
+                </div>
+            </div>
+
+                <div class="block3">
+                  <img src="Images/b04fafe52c8fe90178e81590adb7f007.jpg" alt="Mal">
+                  <div class="text-container1">
+                    <h3>Проверяйте подписанные документы</h3>
+                <p>Сайт предоставляет настраиваемый шаблон договоров аренды</p>
+                </div>
+            </div>
+            </div>
+            <div class="videos">
+
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/Db_wwXguIiw" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/hWNZmKT_iXM" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+</div>
+        </div>
+
+        <div class="button-container">
+            <a href="General.html" class="my-button">Подписать договор аренды</a>
+        </div>
+        
+
+<div class="hello">
+    <h2><b>Добро пожаловать в систему юридического документооборота RentalEase</b></h2>
+    <img src="Images/New_Idea.png" alt="Image">
+</div>
+
+    <div class="texting">
+        <h3>RentalEase - ваш единый пункт назначения для всех ваших потребностей в договорах аренды!</h3>
+        <ul>
+    <li>В RentalEase мы понимаем, с какими трудностями сталкиваются арендаторы и арендодатели, когда дело доходит до подписания договоров аренды квартир. Именно поэтому мы создали онлайн-платформу, которая делает процесс аренды легким и необременительным.</li>
+<li>С RentalEase арендаторы и арендодатели могут подписывать договоры аренды квартир онлайн, не выходя из дома. Наша платформа удобна и интуитивно понятна, что делает ее простой в использовании для любого человека. Больше не нужно распечатывать, сканировать и отправлять по почте или физически встречаться для подписания документов!</li>
+   
+<li>Кроме того, мы предоставляем цифровую систему хранения, чтобы все ваши документы по аренде были организованы и легко доступны в любое время.</li>
+   
+<li>С RentalEase вы можете наслаждаться арендой без проблем, что сэкономит ваше время, деньги и усилия. Зарегистрируйтесь сегодня и сделайте первый шаг к аренде без лишних хлопот!</li>
+</ul>
+    <iframe width="1180" height="400" src="https://www.youtube.com/embed/kI23JW1WmJk" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="tasks" class="tasks">
+    <h2>Основные Задачи</h2>
+        <div class="tasks_inner">
+
+
+            <div class="tasks_inner1">
+                <img src="Images/b04fafe52c8fe90178e81590adb7f007.jpg" alt="Mal">
+                <div class="text-container1">
+                    <h3>Редактируйте документы онлайн</h3>
+                <p>Сайт предоставляет настраиваемый шаблон договоров аренды</p>
+                </div>
+            </div>
+
+            <div class="tasks_inner2">
+                <img src="Images/b04fafe52c8fe90178e81590adb7f007.jpg" alt="Mal">
+                <div class="text-container2">
+                    <h3>Подписывайте документы <br>с ЭЦП</h3>
+                <p>Пользователи могут подписывать договоры <br> аренды онлайн</p>
+                </div>
+            </div>
+
+
+            <div class="tasks_inner3">
+                <img src="Images/b04fafe52c8fe90178e81590adb7f007.jpg" alt="Mal">
+                <div class="text-container3">
+                    <h3>Проверяйте подписанные документы</h3>
+                <p>На сайте предусмотрена цифровая система <br> хранения</p>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<div id="opportunity" class="opportunities">
+    <h1>Ключевые возможности с системой RentalEase</h1>
+    <div class="boxes">
+
+
+
+      <div class="box1">
+        <h2>Описание</h2> <hr>
+        <h3 class="mb-4">Подпись</h3> <hr>
+        <h3 class="mb-4">Дизайн</h3> <hr>
+        <h3 class="mb-4">Хранилище</h3> <hr>
+        <h3 class="mb-4">Закон</h3> <hr>
+        <h3 class="mb-4">Удобство</h3> <hr>
+        <h3 class="mb-4">Доступность</h3>
+    </div>
+
+
+        <div class="box2">
+            <h2>RentalEase</h2> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24"fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24"fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24"fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+              </svg></span></h3>
+        </div>
+
+
+        <div class="box3">
+            <h2>Конкуренты</h2> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24"fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span></h3> <hr>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span></h3>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+  <h1 class="text-center">Тарифные планы системы RentalEase</h1>
+  <div class="card-deck mb-3 text-center container_inner">
+    <div class="card mb-4 box-shadow card1">
+        <div class="card-header">
+        <h4 class="my-0 font-weight-bold">Персональный</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">2000тг<small class="text-muted">/месяц</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Цифровая подпись</li>
+          <li>Скачивание документов</li>
+          <li>Доступ 1 человеку</li>
+          <li>5 документов в месяц</li>
+        </ul>
+        <a href="Tariff.html"><button type="button" class="btn btn-lg btn-block btn-primary button1">Купить</button></a>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow card2">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-bold">Группа</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">4000тг<small class="text-muted">/месяц</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Цифровая подпись</li>
+          <li>Скачивание документов</li>
+          <li>Доступ до 5 человек</li>
+          <li>10 документов в месяц</li>
+        </ul>
+        <a href="Tariff.html"><button type="button" class="btn btn-lg btn-block btn-primary button2">Купить</button></a>
+      </div>
+    </div>
+
+    <div class="card mb-4 box-shadow card3">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-bold">Команда</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">6000тг<small class="text-muted">/месяц</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Цифровая подпись</li>
+          <li>Скачивание документов</li>
+          <li>Доступ до 10 человеку</li>
+          <li>15 документов в месяц</li>
+        </ul>
+        <a href="Tariff.html"><button type="button" class="btn btn-lg btn-block btn-primary button3">Купить</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="faq" class="faq-wrapper">
+  <h1 class="text-center">FAQ</h1>
+  <div class="faq_inner">
+  <div class="faq-column">
+    <div class="faq-box">
+      <div class="faq-question">Что такое цифровой договор аренды квартиры?</div>
+      <div class="faq-answer">Цифровой договор аренды квартиры - это юридически обязывающий договор между арендодателем и арендатором, который создается, подписывается и хранится в электронном виде, без необходимости физического оформления.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Какую пользу приносит цифровой договор аренды рынку жилой недвижимости в Казахстане?</div>
+      <div class="faq-answer">Цифровые договоры аренды упрощают процесс аренды за счет сокращения бумажной работы, экономии времени и ресурсов. Они обеспечивают удобство, эффективность и повышенную безопасность, облегчая арендодателям и арендаторам управление арендными операциями.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Можно ли внести изменения в цифровой договор аренды после его подписания?</div>
+      <div class="faq-answer">Внесение изменений в договор аренды после его подписания может потребовать взаимного согласия арендодателя и арендатора. Любые изменения должны быть надлежащим образом задокументированы и подтверждены обеими сторонами для обеспечения соблюдения законодательства.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Какими ключевыми особенностями должен обладать цифровой договор аренды квартиры?</div>
+      <div class="faq-answer">Цифровой договор аренды должен включать такие важные компоненты, как сведения о недвижимости, условия аренды, информацию об оплате, обязанности обеих сторон, положения о расторжении договора и любые дополнительные условия, специфичные для арендуемой недвижимости.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Существуют ли какие-либо особые юридические требования или правила, которые необходимо учитывать при разработке договора аренды цифрового оборудования в Казахстане?</div>
+      <div class="faq-answer">Несмотря на то, что в Казахстане не существует специальных нормативных актов, относящихся к договорам аренды цифровой техники, рекомендуется придерживаться общего договорного законодательства и правил защиты данных, чтобы обеспечить действительность договора и соблюдение требований конфиденциальности.</div>
+    </div>
+      </div>
+  <div class="faq-column">
+    <div class="faq-box">
+      <div class="faq-question">Имеют ли цифровые договоры аренды юридическую силу?</div>
+      <div class="faq-answer">Да, цифровые договоры аренды имеют юридическую силу в Казахстане. Страна признала юридическую силу электронных документов и подписей посредством различных законов и нормативных актов.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Как обеспечить безопасное хранение цифрового договора аренды и доступ к нему?</div>
+      <div class="faq-answer">Цифровые договоры аренды можно безопасно хранить с помощью облачных сервисов хранения или специальных систем управления документами. Для защиты конфиденциальности и целостности договора следует внедрить шифрование и контроль доступа.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Можно ли использовать цифровой договор аренды в качестве доказательства в судебных спорах?</div>
+      <div class="faq-answer">Да, договоры аренды цифрового оборудования могут служить весомым доказательством в судебных спорах. Важно убедиться, что договор содержит всю необходимую информацию и что обе стороны согласились с его условиями.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Как арендаторы и арендодатели могут подписать цифровой договор аренды?</div>
+      <div class="faq-answer">Цифровые договоры аренды могут быть подписаны в электронном виде с использованием различных методов, таких как платформы электронной подписи, сертификаты цифровой подписи или даже посредством обмена электронными письмами с напечатанными именами в качестве подписи.</div>
+    </div>
+    <div class="faq-box">
+      <div class="faq-question">Существуют ли какие-либо потенциальные проблемы или ограничения при реализации договоров цифровой аренды в Казахстане?</div>
+      <div class="faq-answer">Некоторые проблемы могут включать обеспечение широкого доступа к цифровым платформам, устранение технологических барьеров для определенных слоев населения, а также повышение осведомленности и доверия к цифровым процессам. Важно учитывать конкретные потребности и обстоятельства целевых пользователей на рынке жилой недвижимости.</div>
+    </div>
+      </div>
+    </div>
+</div>
+
+  <style>
+    .faq-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .faq-modal-content {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+  
+    .faq-modal-question {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    .faq-modal-answer {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .faq-modal-back {
+      background-color: #fde88d;
+      color: #000000;
+      padding: 10px 20px;
+      border: 1px solid #000000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .user-menu {
+  position: relative;
+  padding-top: 15px;
+}
+
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 150px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 999;
+}
+
+.user-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+.user-menu:hover .user-dropdown {
+  display: block;
+}
+
+  </style>
+
+<script>
+  // Add click event listener to all faq-question elements
+  var faqQuestions = document.getElementsByClassName('faq-question');
+  for (var i = 0; i < faqQuestions.length; i++) {
+    faqQuestions[i].addEventListener('click', function() {
+      // Get the question and answer elements
+      var question = this.innerHTML;
+      var answer = this.nextElementSibling.innerHTML;
+      
+      // Create a modal box element
+      var modal = document.createElement('div');
+      modal.className = 'faq-modal';
+      
+      // Create the modal content
+      var modalContent = document.createElement('div');
+      modalContent.className = 'faq-modal-content';
+      modalContent.innerHTML = '<div class="faq-modal-question">' + question + '</div>' +
+                               '<div class="faq-modal-answer">' + answer + '</div>' +
+                               '<button class="faq-modal-back">Назад</button>';
+                               
+      // Add the modal content to the modal box
+      modal.appendChild(modalContent);
+      
+      // Add the modal box to the body
+      document.body.appendChild(modal);
+      
+      // Add click event listener to the back button
+      var backButton = modal.getElementsByClassName('faq-modal-back')[0];
+      backButton.addEventListener('click', function() {
+        // Remove the modal box from the body
+        document.body.removeChild(modal);
+      });
+    });
+  }
+</script>
+  
+ </main>
+
+ <footer>
+  <div class="footer-row1">
+    <div class="footer-contact">
+      <h2><strong>Контакты</strong></h2>
+
+      <div class="contact1"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg> <p class="ml-4 m-0">Арнасай 112</p>
+      </div>
+
+      <div class="contact2"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg> <p class="ml-4 m-0">8(708) 519 1417</p>
+      </div>
+      
+      <div class="contact3"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+      </svg> <p class="ml-4 m-0">office@rentalease.kz</p>
+      </div>
+
+    </div>
+    <div class="footer-logo">
+      <img src="Images/Logo New.png" alt="Logo" width="400">
+    </div>
+    <div class="footer-social-media">
+      <div class="m-0 social1">
+      <h2 class="pb-4"><strong>Свяжитесь с нами</strong></h2>
+      <ul class="social-media-icons">
+        <li><a href="https://www.facebook.com/profile.php?id=100008999234980"><img src="Images/Facebook_Logo_(2019).png.webp" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/03_baha/"><img src="Images/Instagram_icon.png.webp" alt="Instagram"></a></li>
+        <li><a href="https://t.me/bh_03"><img src="Images/Telegram_logo.svg.webp" alt="Telegram"></a></li>
+      </ul>
+    </div>
+
+    <a href="#"><div class="social2">
+      <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="black" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+      <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+    </svg>
+    <a href="Feedback.html"></div class="my-button2">Обратная связь</div></div></a>
+  </div>
+  </div>
+  <hr>
+  <div class="footer-row2">
+    <p>Все права защищены © Сервис для подписания договоров аренды "RentalEase" <br>
+      Любое копирование материалов разрешено только с согласия правообладателей.</p>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

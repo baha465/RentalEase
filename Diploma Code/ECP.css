@@ -1,0 +1,148 @@
+.back {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .back-link {
+    margin-left: 150px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .back-link:hover {
+    color:#db8f00;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .login-section {
+    flex: 1;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-options {
+    display: flex;
+  }
+  
+  .login-option {
+    padding: 10px;
+    background-color: #fde88d;
+    border: 1px solid #000000;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .login-option.active {
+    background-color: #ffffff;
+  }
+
+  .login-option.active:hover {
+    background-color: #db8f00;
+  }
+  
+  .disclaimer {
+    margin-bottom: 0;
+    width: 360px;
+    font-size: 20px;
+  }
+  
+  .registration-section {
+    flex: 1;
+    padding-right: 150px;  
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+  }
+  
+  .registration-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .register-button {
+    width: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color:#fde88d;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 40px;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /*Font-sizes*/
+  
+  .back-link {
+    font-size: 30px;
+  }
+  
+  .login-section h2 {
+    font-size: 40px;
+  }
+  
+  .login-section h3 {
+    font-size: 26px;
+  }
+  
+  .login-option {
+    font-size: 20px;
+  }
+  
+  .registration-section h2 {
+    font-size: 40px;
+  }
+  
+  .login-section h2 {
+    margin: 5px 0;
+  }
+  
+  .login-section h3 {
+    margin: 20px 0;
+  }
+  
+  .login-form h4 {
+    margin: 20px 0;
+  }
+  
+  .registration-section h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .ECP-button {
+    font-size: 20px;
+    width: 360px;
+    height: 50px;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
